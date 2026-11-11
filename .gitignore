@@ -1,0 +1,26 @@
+# Arquivos de ambiente e credenciais
+.env
+*.env
+secrets.*
+*.pem
+*.key
+*.credential*
+
+# Backups e dumps de banco de dados
+*.dump
+*.bak
+*.backup
+*.tar.gz
+
+# Arquivos temporários e de editores
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*~
+.idea/
+.vscode/
+
+# Logs e histórico
+*.log
+.history/
