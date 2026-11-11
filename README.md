@@ -20,3 +20,5 @@ testes-sql/
 * **SGBD:** MySQL Server 8.4 LTS
 * **Interface Gráfica:** MySQL Workbench
 * **Ambiente Local:** Docker & Docker Compose
+
+---
