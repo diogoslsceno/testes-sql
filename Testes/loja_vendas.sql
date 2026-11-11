@@ -26,13 +26,19 @@ INSERT INTO produtos (nome, categoria, preco, estoque) VALUES
 
 INSERT INTO vendas (cliente_nome, produto_id, quantidade, data_venda) VALUES
 ('Carlos Silva', 1, 2, '2026-11-01'),
-('Mariana SOuza', 3, 1, '2026-11-05'),
+('Mariana Souza', 3, 1, '2026-11-05'),
 ('João Santos', 2, 1, '2026-11-10');
 
 SELECT * FROM produtos;
+
 SELECT nome, preco FROM produtos WHERE preco > 200;
+
 SELECT nome, preco, estoque FROM produtos ORDER BY preco DESC;
+
 SELECT cliente_nome, quantidade, data_venda FROM vendas;
+
 UPDATE produtos SET preco = 220.00 WHERE id = 1;
+
 UPDATE produtos SET estoque = estoque - 1 WHERE id = 2;
+
 SELECT * FROM produtos;

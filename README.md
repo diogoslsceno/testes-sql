@@ -8,7 +8,8 @@ Repositório pessoal dedicado a estudos, testes práticos e anotações de scrip
 
 ```text
 testes-sql/
-├── testes/                # Scripts e exercícios práticos em SQL
+├── Contexts/              # Documentações de contexto e resumo dos aprendizados
+├── Testes/                # Scripts e exercícios práticos em SQL
 ├── .gitignore             # Proteção contra envio de dados sensíveis e temporários
 └── README.md              # Documentação do repositório
 ```
@@ -20,5 +21,3 @@ testes-sql/
 * **SGBD:** MySQL Server 8.4 LTS
 * **Interface Gráfica:** MySQL Workbench
 * **Ambiente Local:** Docker & Docker Compose
-
----
