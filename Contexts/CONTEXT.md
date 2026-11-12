@@ -5,7 +5,7 @@ Este documento consolida o histórico, a evolução dos estudos e o resumo de to
 ---
 
 ## 🎯 Objetivo dos Estudos
-Desenvolver proficiência prática em **SQL (Structured Query Language)** utilizando **MySQL Server 8.4** e a interface gráfica **MySQL Workbench**, partindo dos comandos fundamentais de definição e manipulação de dados até relacionamentos avançados entre tabelas.
+Desenvolver proficiência prática em **SQL (Structured Query Language)** utilizando **MySQL Server 8.4** e a interface gráfica **MySQL Workbench**, partindo dos comandos fundamentais de definição e manipulação de dados até relacionamentos avançados entre tabelas e modelagem visual EER.
 
 ---
 
@@ -52,6 +52,18 @@ Desenvolver proficiência prática em **SQL (Structured Query Language)** utiliz
   * Cruzamento de tabelas com `INNER JOIN` gerando a agenda de atendimentos.
   * **Agrupamento com `GROUP BY`:** Utilização de `COUNT(consultas.id) ... GROUP BY medicos.nome` para gerar métricas de produtividade por médico.
   * Ciclo de vida do agendamento: transição de status (`Agendada` ➔ `Realizada`) e cancelamento via `DELETE`.
+
+---
+
+### 5. E-commerce Completo e Modelagem EER (`Testes/ecommerce_db.sql`)
+* **Tema:** Arquitetura relacional completa de uma loja virtual com 6 tabelas conectadas.
+* **Conceitos abordados:**
+  * **Cardinalidade Relacional:**
+    * `1:N` (Um para Muitos): `clientes` ➔ `enderecos`, `clientes` ➔ `pedidos`, `categorias` ➔ `produtos`.
+    * `N:M` (Muitos para Muitos): resolvido com a tabela associativa `itens_pedido` entre `pedidos` e `produtos`.
+  * Datas dinâmicas: `DATETIME DEFAULT CURRENT_TIMESTAMP` para registro do momento da compra.
+  * Cruzamento avançado: consulta unindo 4 tabelas (`itens_pedido`, `pedidos`, `clientes` e `produtos`) com cálculo de subtotal por item.
+  * **Engenharia Reversa:** Geração e visualização do diagrama de modelo relacional (EER) no MySQL Workbench.
 
 ---
 
